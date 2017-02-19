@@ -1,0 +1,85 @@
+html, body{
+	padding: 0;
+	margin : 0;
+	height: 100%;
+ }
+.container{
+	width: 1200px;
+	margin: 0 auto;
+ }
+#logo{
+	margin-top: 5px;
+}
+#Topp{
+	background-size: cover;
+}
+#cmText{
+font-size: 16px;
+font-family: "Arial";
+}
+#leftt{
+width: 600px;
+float: left;
+font-size: 16px;
+font-family: "Arial";
+}
+#rightt{
+width: 600px;
+margin-left: 610px;
+font-size: 16px;
+font-family: "Arial";
+}
+#leftt2{
+width: 300px;
+float: left;
+font-size: 16px;
+font-family: "Arial";
+}
+#rightt2{
+width: 900px;
+margin-left: 380px;
+font-size: 16px;
+font-family: "Arial";
+}
+#bigtext{
+margin: 10;
+font-size: 22px;
+font-weight: 600;
+font-family: "Arial";
+}
+#vbigtext{
+font-size: 30px;
+color: #1ea01e;
+font-weight: 600;
+font-family: "Arial";
+}
+li{
+margin-bottom: 10px;
+}
+p{
+margin: 0;
+margin-top: 15px;
+}
+#mbottom{
+margin-left: 75px;
+}
+#getlink{
+background-color: #fff4b3;
+font-size: 16px;
+font-family: "Arial";
+margin-top: 50px;
+margin-bottom: 30px;
+}
+#STinput{
+border-radius: 5px;
+margin-right: 80px;
+}
+label{
+	width: 200px;
+	display: inline-block;
+}
+input{
+border-radius: 5px;
+height: 40px;
+margin-bottom: 25px;
+}

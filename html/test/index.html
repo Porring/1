@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script language="JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script>
+function check() {
+var a=0;
+if($('#inp1').val() == '') a=0; else a++;
+if($('#inp2').val() == '') a=0; else a++;
+if($('#in3').val() == '') a=0; else a++;
+if(a==3) $('#send').removeAttr('disabled'); else $('#send').attr('disabled','disable');
+	
+}
+
+</script>
+
+</head>
+<style>
+</style>
+<body>			
+	<div class="container">
+				<div id="logo">
+					<img src="img/logo.png">
+				</div>
+				<div>
+					<img src="img/top1.png" width="100%">
+				</div>
+		<div id="mbottom">		
+				<div style="margin-bottom: 50px;" id="cmText">
+					<p>БИБОСС даёт возможность получить бесплатные баллы-нужно лишь разместить на сайте компании любую из ссылок</p>
+					<ul type="disc">
+						<li>Текстовая ссылка Франшизаиза за [Название] на БИБОСС</li>
+						<li>Текстовая ссылка Наша франшиза за БИБОСС</li>
+						<li>Кнопка "Нравится франшиза" + счетчик популярности</li>
+					</ul>
+				</div>
+				<div style="background-color: #f7f8fa;" align="center" id="cmText">
+				<p>Зачем нужны <a>баллы</a>?</p>
+				<p id="bigtext">Больше баллов - выше позиция в выдаче категории</p><br>
+				</div>
+				<div id="leftt">
+						<p id="bigtext">Правила размещения ссылки</p>
+					<ul type="disc">
+						<li style="margin-bottom: 20px;">Ссылка должна быть индексируемой (без тегов &lt;noindex&gt; и &ltnofollow&gt)</li>
+						<li style="margin-bottom: 20px;">Ссылка должна быть читаемой, не скрытой от глаз посетителя сайта.</li>
+						<li style="margin-bottom: 20px;">Ссылка должна былть размещена на странице сайта, посвященной франчайзингу.</li>
+						<li style="margin-bottom: 20px;">При размещение ссылок на другие порталы о франчайзинге - баллы обнуляются.</li>
+					</ul>
+				</div>
+				<div id="rightt">
+					<p id="bigtext">Стоимость ссылки</p>
+					<p id="vbigtext">200 баллов</p>
+					<p id="cmText">ТиЦ Вашего сайта от 10</p>
+					<p id="vbigtext">50 баллов</p>
+					<p id="cmText">ТиЦ вашего сайта от 0 до 10</p>
+				</div>
+				<div id="getlink">
+					<br>
+					<form>
+					<p style="clear: left; margin-top: 50px; margin-bottom: 35px;"id="bigtext" align="center">ПОЛУЧИТЬ ССЫЛКУ</p>
+					<p style="margin-left: 200px;">
+						<label>Ваше имя </label>
+						<input type="text" size="40" placeholder="Представьтесь, пожалуйста" onkeyup="check();" id="inp1">
+					</p>
+					<p style="margin-left: 200px;">
+						<label>Номер телефона </label>
+						<input type="tel" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" size="40" placeholder="Для начисления баллов и связи с Вами" onkeyup="check();" id="inp2">
+					</p>
+					<p style="margin-left: 200px;">
+						<label>Название франшизы </label>
+						<input type="text" size="40" placeholder="Например, Subway" onkeyup="check();" id="in3">
+					</p>
+					<input style="margin-left: 405px; width: 140px; background-color: #0d972b; color: white;" type="submit" value="Получить ссылку" id="send" disabled="disabled">
+					</form>
+				</div>
+				<p id="cmText"><strong>Это еще не все...</strong> Вы можете заработать дополнительные баллы, если разместите на своем сайте новость, интервью или статью БИБОСС о вашей компании с активной ссылкой! 50 баллов за активную ссылку на новость!</p>
+		</div>		
+	</div>
+</body>
+</html>
